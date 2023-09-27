@@ -21,40 +21,42 @@
             <div>
                 <div class="Formulario">
                     <p>Codigo Empleado:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxCodigo" runat="server" Width="200px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtCodEmp" runat="server" Width="200px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>NIF:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxNIF" runat="server" Width="200px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtNifEmp" runat="server" Width="200px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Apellidos y Nombre:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxNombre" runat="server" Width="450px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtNomEmp" runat="server" Width="450px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Direccion:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxDireccion" runat="server" Width="450px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtDirEmp" runat="server" Width="450px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Ciudad:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxCiudad" runat="server" Width="450px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtCiuEmp" runat="server" Width="450px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Telefono:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxTelefono" runat="server" Width="450px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtTelEmp" runat="server" Width="450px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Fecha de Nacimiento:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxNacimiento" runat="server" Width="150px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtFnaEmp" runat="server" Width="150px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Fecha de Ingreso:</p>
-                    <asp:TextBox class="textbox" ID="TextBoxIngreso" runat="server" Width="150px"></asp:TextBox>
+                    <asp:TextBox class="textbox" ID="txtFinEmp" runat="server" Width="150px"></asp:TextBox>
                 </div>
                 <div class="Formulario">
                     <p>Sexo:</p>
-                    <asp:RadioButton class="rb" ID="RadioButton1" runat="server" Text="Hombre" />
-                    <asp:RadioButton class="rb" ID="RadioButton2" runat="server" Text="Mujer" />
+                    <asp:RadioButtonList class="rbl" ID="rblSexEmp" runat="server" RepeatDirection="Horizontal">
+                        <asp:ListItem Selected="True" Value="H">Hombre</asp:ListItem>
+                        <asp:ListItem Value="M">Mujer</asp:ListItem>
+                    </asp:RadioButtonList>
                 </div>
                 <div class="Formulario">
                     <p>Departamento:</p>
