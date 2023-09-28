@@ -1,2 +1,32 @@
 ﻿body {
 }
+#titulo{
+    text-align: center;
+}
+.parte{
+    width: 100%;
+}
+.letras{
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.rellenar{
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.p{
+    float: right;
+}
+.txtbox{
+    width: 200px;
+}
+.txtbox2{
+    width: 100%;
+}
+#boton{
+    text-align: center;
+    margin-top: 40px;
+}
+

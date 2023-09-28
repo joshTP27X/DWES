@@ -33,13 +33,13 @@ namespace GesPresta
         protected global::GesPresta.Cabecera Cabecera;
 
         /// <summary>
-        /// Control Label1.
+        /// Control txtCodPres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label txtCodPres;
 
         /// <summary>
         /// Control txtCodPre.
@@ -51,13 +51,13 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtCodPre;
 
         /// <summary>
-        /// Control Label2.
+        /// Control txtDesPres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label2;
+        protected global::System.Web.UI.WebControls.Label txtDesPres;
 
         /// <summary>
         /// Control txtDesPre.
@@ -69,13 +69,13 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtDesPre;
 
         /// <summary>
-        /// Control Label3.
+        /// Control txtImpF.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label3;
+        protected global::System.Web.UI.WebControls.Label txtImpF;
 
         /// <summary>
         /// Control txtImpPre.
@@ -87,13 +87,13 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtImpPre;
 
         /// <summary>
-        /// Control Label4.
+        /// Control txtPorImp.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label4;
+        protected global::System.Web.UI.WebControls.Label txtPorImp;
 
         /// <summary>
         /// Control txtTipPre.
@@ -105,21 +105,30 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.TextBox txtTipPre;
 
         /// <summary>
-        /// Control Label5.
+        /// Control ddlTipoPres.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label5;
+        protected global::System.Web.UI.WebControls.Label ddlTipoPres;
 
         /// <summary>
-        /// Control DropDownList1.
+        /// Control ddlTipPre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList ddlTipPre;
+
+        /// <summary>
+        /// Control cmdEnviar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button cmdEnviar;
     }
 }
