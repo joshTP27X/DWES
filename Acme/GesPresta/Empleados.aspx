@@ -11,56 +11,95 @@
     <title></title>
 </head>
 <body>
-    
     <form id="form1" runat="server">
         <uc1:Cabecera runat="server" ID="Cabecera" />
-        <div id="contenedor">
-            <div>
+        <div>
+            <div id="titulo">
                 <h2>DATOS DE LOS EMPLEADOS</h2>
             </div>
-            <div>
-                <div class="Formulario">
-                    <p>Codigo Empleado:</p>
-                    <asp:TextBox class="textbox" ID="txtCodEmp" runat="server" Width="200px"></asp:TextBox>
+            <div id="formulario">
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblCodEmp" runat="server" Text="Codigo Empleado:"></asp:Label>
+                    </div>
+                    <div class="completar">  
+                        <asp:TextBox class="textbox" ID="txtCodEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>NIF:</p>
-                    <asp:TextBox class="textbox" ID="txtNifEmp" runat="server" Width="200px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblNif" runat="server" Text="NIF:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtNifEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Apellidos y Nombre:</p>
-                    <asp:TextBox class="textbox" ID="txtNomEmp" runat="server" Width="450px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblNom" runat="server" Text="Apellidos y Nombre:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtNomEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Direccion:</p>
-                    <asp:TextBox class="textbox" ID="txtDirEmp" runat="server" Width="450px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblDirc" runat="server" Text="Direccion:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtDirEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Ciudad:</p>
-                    <asp:TextBox class="textbox" ID="txtCiuEmp" runat="server" Width="450px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblCiu" runat="server" Text="Ciudad:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtCiuEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Telefono:</p>
-                    <asp:TextBox class="textbox" ID="txtTelEmp" runat="server" Width="450px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lbltlf" runat="server" Text="Telefono:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtTelEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Fecha de Nacimiento:</p>
-                    <asp:TextBox class="textbox" ID="txtFnaEmp" runat="server" Width="150px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblFN" runat="server" Text="Fecha de Nacimiento:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtFnaEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Fecha de Ingreso:</p>
-                    <asp:TextBox class="textbox" ID="txtFinEmp" runat="server" Width="150px"></asp:TextBox>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblFI" runat="server" Text="Fecha de Ingreso:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:TextBox class="textbox" ID="txtFinEmp" runat="server"></asp:TextBox>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Sexo:</p>
-                    <asp:RadioButtonList class="rbl" ID="rblSexEmp" runat="server" RepeatDirection="Horizontal">
-                        <asp:ListItem Selected="True" Value="H">Hombre</asp:ListItem>
-                        <asp:ListItem Value="M">Mujer</asp:ListItem>
-                    </asp:RadioButtonList>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblSexo" runat="server" Text="Sexo:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:RadioButtonList class="rbl" ID="rblSexEmp" runat="server" RepeatDirection="Horizontal">
+                            <asp:ListItem Selected="True" Value="H">Hombre</asp:ListItem>
+                            <asp:ListItem Value="M">Mujer</asp:ListItem>
+                        </asp:RadioButtonList>
+                    </div>
                 </div>
-                <div class="Formulario">
-                    <p>Departamento:</p>
-                    <asp:DropDownList class="dlist" ID="DropDownListDropList" runat="server"></asp:DropDownList>
+                <div class="parte">
+                    <div class="letra">
+                        <asp:Label class="pe" ID="lblDep" runat="server" Text="Departamento:"></asp:Label>
+                    </div>
+                    <div class="completar">
+                        <asp:DropDownList class="dlist" ID="DropDownListDropList" runat="server"></asp:DropDownList>
+                    </div>
                 </div>
             </div>
         </div>

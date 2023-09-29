@@ -1,7 +1,12 @@
-﻿body {
+﻿body{
+    margin-top: 30px;
 }
-#titulo{
+#cuerpo{
+    width: 100%
+}
+#titulos{
     text-align: center;
+    width: 100%;
 }
 .parte{
     width: 100%;

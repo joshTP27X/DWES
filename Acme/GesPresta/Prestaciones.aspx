@@ -13,61 +13,61 @@
 <body>
     <form id="form1" runat="server">
         <uc1:Cabecera runat="server" ID="Cabecera" />
-        <div>
-            <div id="titulo">
+        <div id="cuerpo">
+            <div id="titulos">
                 <h2>DATOS DE LAS PRESTACIONES</h2>
             </div>
-            <div class="parte">
-                <div class="letras">
-                    <asp:Label class="p" ID="txtCodPres" runat="server" Text="Codigo Prestacion"></asp:Label>
+            <div id="formularios">
+                <div class="parte">
+                    <div class="letras">
+                        <asp:Label class="p" ID="txtCodPres" runat="server" Text="Codigo Prestacion"></asp:Label>
+                    </div>
+                    <div class="rellenar">
+                        <asp:TextBox class="txtbox" ID="txtCodPre" runat="server"></asp:TextBox>
+                    </div>  
                 </div>
-                <div class="rellenar">
-                    <asp:TextBox class="txtbox" ID="txtCodPre" runat="server"></asp:TextBox>
-                </div>  
+                <div class="parte">
+                    <div class="letras">
+                        <asp:Label class="p" ID="txtDesPres" runat="server" Text="Descripcion"></asp:Label>
+                    </div>
+                    <div class="rellenar">
+                        <asp:TextBox class="txtbox2" ID="txtDesPre" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="parte">
+                    <div class="letras">
+                        <asp:Label class="p" ID="txtImpF" runat="server" Text="Importe Fijo"></asp:Label>
+                    </div>
+                    <div class="rellenar">
+                        <asp:TextBox class="txtbox" ID="txtImpPre" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="parte">
+                    <div class="letras">
+                        <asp:Label class="p" ID="txtPorImp" runat="server" Text="Porcentaje del Importe"></asp:Label>
+                    </div>
+                    <div class="rellenar">
+                        <asp:TextBox class="txtbox" ID="txtTipPre" runat="server"></asp:TextBox>
+                    </div>
+                </div>
+                <div class="parte">
+                    <div class="letras">
+                        <asp:Label class="p" ID="ddlTipoPres" runat="server" Text="Label"></asp:Label>
+                    </div>
+                    <div class="rellenar">
+                        <asp:DropDownList ID="ddlTipPre" runat="server">
+                            <asp:ListItem Value="Denteria"></asp:ListItem>
+                            <asp:ListItem Value="Familiar"></asp:ListItem>
+                            <asp:ListItem Selected="True" Value="Ocular"></asp:ListItem>
+                            <asp:ListItem Value="Otras"></asp:ListItem>
+                        </asp:DropDownList>
+                    </div>
+                </div>
+            </div> 
+            <div id="boton">
+                <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
             </div>
-            <div class="parte">
-                <div class="letras">
-                    <asp:Label class="p" ID="txtDesPres" runat="server" Text="Descripcion"></asp:Label>
-                </div>
-                <div class="rellenar">
-                    <asp:TextBox class="txtbox2" ID="txtDesPre" runat="server"></asp:TextBox>
-                </div>
-                
-            </div>
-            <div class="parte">
-                <div class="letras">
-                    <asp:Label class="p" ID="txtImpF" runat="server" Text="Importe Fijo"></asp:Label>
-                </div>
-                <div class="rellenar">
-                    <asp:TextBox class="txtbox" ID="txtImpPre" runat="server"></asp:TextBox>
-                </div>
-            </div>
-            <div class="parte">
-                <div class="letras">
-                    <asp:Label class="p" ID="txtPorImp" runat="server" Text="Porcentaje del Importe"></asp:Label>
-                </div>
-                <div class="rellenar">
-                    <asp:TextBox class="txtbox" ID="txtTipPre" runat="server"></asp:TextBox>
-                </div>
-            </div>
-            <div class="parte">
-                <div class="letras">
-                    <asp:Label class="p" ID="ddlTipoPres" runat="server" Text="Label"></asp:Label>
-                </div>
-                <div class="rellenar">
-                    <asp:DropDownList ID="ddlTipPre" runat="server">
-                        <asp:ListItem Value="Denteria"></asp:ListItem>
-                        <asp:ListItem Value="Familiar"></asp:ListItem>
-                        <asp:ListItem Selected="True" Value="Ocular"></asp:ListItem>
-                        <asp:ListItem Value="Otras"></asp:ListItem>
-                    </asp:DropDownList>
-                </div>
-                
-            </div>
-        </div>
-        <div id="boton">
-            <asp:Button ID="cmdEnviar" runat="server" Text="Enviar" />
-        </div>
+        </div> 
     </form>
 </body>
 </html>
