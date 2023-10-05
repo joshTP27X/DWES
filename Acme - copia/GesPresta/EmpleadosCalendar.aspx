@@ -111,7 +111,7 @@
                     <div class="calendario">
                         <div class="FN1">
                             <asp:Label class="fn" ID="Label1" runat="server" Text="Fecha de Nacimiento"></asp:Label>
-                            <asp:TextBox class="tn" ID="TextBox1" runat="server"></asp:TextBox>
+                            <asp:TextBox class="tn" ID="txtFnaEmp1" runat="server" OnTextChanged="txtFnaEmp_TextChanged"></asp:TextBox>
                         </div>
                         <div class="FN2">
                             <asp:Calendar ID="Calendar1" runat="server" OnSelectionChanged="Calendar1_SelectionChanged">
@@ -127,10 +127,10 @@
                     <div class="calendario2">
                         <div class="FN1-2">
                             <asp:Label class="fn2" ID="Label2" runat="server" Text="Fecha de Ingreso"></asp:Label>
-                            <asp:TextBox class="tn2" ID="TextBox2" runat="server"></asp:TextBox>
+                            <asp:TextBox class="tn2" ID="txtFinEmp1" runat="server" OnTextChanged="txtFinEmp_TextChanged"></asp:TextBox>
                         </div>
                         <div class="FN2-2">
-                            <asp:Calendar ID="cFinEmp" runat="server"></asp:Calendar>
+                            <asp:Calendar ID="cFinEmp" runat="server" OnSelectionChanged="cFinEmp_SelectionChanged"></asp:Calendar>
                         </div>
                         <div class="FN3-2">
                             <div class="FN3-1">
@@ -147,6 +147,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div>
+                    <asp:Label ID="lblErrores" runat="server" Visible="False" Class="labelError" BackColor="Red"></asp:Label>
                 </div>
             </div>
         </div>
