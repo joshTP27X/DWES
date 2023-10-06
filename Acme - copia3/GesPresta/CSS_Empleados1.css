@@ -1,0 +1,45 @@
+﻿body{
+    margin-top: 30px;
+}
+#titulo {
+    text-align: center;
+    width: 100%;
+}
+#formulario {
+    width: 100%;
+}
+.parte {
+    width: 100%;
+}
+.letra {
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.completar {
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.pe {
+    float: right;
+}
+.textbox {
+    width: 200px;
+    float: left;
+}
+#boton {
+    text-align: center;
+    margin-top: 40px;
+}
+.rbl{
+    margin-left: 20px;
+}
+.dlist{
+    float: left;
+    width: 150px;
+}
+#respuesta{
+    text-align: center;
+    margin-top: 20px;
+}
