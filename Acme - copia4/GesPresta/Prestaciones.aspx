@@ -24,6 +24,7 @@
                     </div>
                     <div class="rellenar">
                         <asp:TextBox class="txtbox" ID="txtCodPre" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdtxtCodPre" runat="server" ErrorMessage="El codigo de prestacion es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>  
                 </div>
                 <div class="parte">
@@ -40,6 +41,7 @@
                     </div>
                     <div class="rellenar">
                         <asp:TextBox class="txtbox" ID="txtImpPre" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdtxtImpPre" runat="server" ErrorMessage="El importe fijo es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -48,6 +50,7 @@
                     </div>
                     <div class="rellenar">
                         <asp:TextBox class="txtbox" ID="txtTipPre" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdtxtTipPre" runat="server" ErrorMessage="El porcentaje del importe es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">

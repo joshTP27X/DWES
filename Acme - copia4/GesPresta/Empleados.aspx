@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Empleados.aspx.cs" Inherits="GesPresta.Empleados"  Trace="true"%>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Empleados.aspx.cs" Inherits="GesPresta.Empleados" %>
 
 <%@ Register Src="~/Cabecera.ascx" TagPrefix="uc1" TagName="Cabecera" %>
 
@@ -24,6 +24,7 @@
                     </div>
                     <div class="completar">  
                         <asp:TextBox class="textbox" ID="txtCodEmp" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdTxtCodEmp" runat="server" ErrorMessage="El Codigo Empleado es obligatorio" ControlToValidate="txtCodEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -32,6 +33,7 @@
                     </div>
                     <div class="completar">
                         <asp:TextBox class="textbox" ID="txtNifEmp" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdTxtNifEmp" runat="server" ErrorMessage="El NIF es obligatorio" ControlToValidate="txtNifEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -40,6 +42,7 @@
                     </div>
                     <div class="completar">
                         <asp:TextBox class="textbox" ID="txtNomEmp" runat="server" Width="80%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdTxtNomEmp" runat="server" ErrorMessage="EL nombre del empleado es obligatorio" ControlToValidate="txtNomEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -64,6 +67,7 @@
                     </div>
                     <div class="completar">
                         <asp:TextBox class="textbox" ID="txtTelEmp" runat="server" Width="60%"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdTxtTelEmp" runat="server" ErrorMessage="El numero telefonico es obligatorio" ControlToValidate="txtTelEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -72,6 +76,7 @@
                     </div>
                     <div class="completar">
                         <asp:TextBox class="textbox" ID="txtFnaEmp" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdTxtFnaEmp" runat="server" ErrorMessage="Es obligatorio el ingreso de la fecha de nacimiento" ControlToValidate="txtFnaEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -80,6 +85,7 @@
                     </div>
                     <div class="completar">
                         <asp:TextBox class="textbox" ID="txtFinEmp" runat="server"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="rqdTxtFinEmp" runat="server" ErrorMessage="Es obligatorio el ingreso de fecha de ingreso" ControlToValidate="txtFinEmp" ForeColor="Red"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">

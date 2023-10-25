@@ -133,7 +133,7 @@ namespace GesPresta
             Calendar1.VisibleDate = Convert.ToDateTime(txtFnaEmp.Text);
 
             string fecha_nac = Calendar1.SelectedDate.ToShortDateString();
-            string fecha_ing = Calendar1.SelectedDate.ToShortDateString();
+            string fecha_ing = cFinEmp.SelectedDate.ToShortDateString();
 
             if (txtFinEmp1.Text != "")
             {
