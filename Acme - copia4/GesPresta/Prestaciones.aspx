@@ -23,8 +23,9 @@
                         <asp:Label class="p" ID="txtCodPres" runat="server" Text="Codigo Prestacion:"></asp:Label>
                     </div>
                     <div class="rellenar">
+                        <asp:RegularExpressionValidator ID="regtxtCodPre" runat="server" ControlToValidate="txtCodPre" ErrorMessage="El formato de los datos a introducir debe ser: 3 dígitos, un guión, 3 dígitos, un guion y, 3 dígitos" ForeColor="Green" ValidationExpression="\d{3}-\d{3}-\d{3}"></asp:RegularExpressionValidator>
                         <asp:TextBox class="txtbox" ID="txtCodPre" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rqdtxtCodPre" runat="server" ErrorMessage="El codigo de prestacion es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rqdtxtCodPre" runat="server" ErrorMessage="El codigo de prestacion es obligatorio" ForeColor="Red" ControlToValidate="txtCodPre"></asp:RequiredFieldValidator>
                     </div>  
                 </div>
                 <div class="parte">
@@ -40,8 +41,9 @@
                         <asp:Label class="p" ID="txtImpF" runat="server" Text="Importe Fijo:"></asp:Label>
                     </div>
                     <div class="rellenar">
+                        <asp:RangeValidator ID="rngtxtImpPre" runat="server" ControlToValidate="txtImpPre" ErrorMessage="El importe Fijo de estar entre 0,00 y 500,00" ForeColor="Red" MaximumValue="500,00" MinimumValue="0,00" Type="Double"></asp:RangeValidator>
                         <asp:TextBox class="txtbox" ID="txtImpPre" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rqdtxtImpPre" runat="server" ErrorMessage="El importe fijo es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rqdtxtImpPre" runat="server" ErrorMessage="El importe fijo es obligatorio" ForeColor="Red" ControlToValidate="txtImpPre"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">
@@ -49,8 +51,9 @@
                         <asp:Label class="p" ID="txtPorImp" runat="server" Text="Porcentaje del Importe:"></asp:Label>
                     </div>
                     <div class="rellenar">
+                        <asp:RangeValidator ID="rngtxtTipPre" runat="server" ControlToValidate="txtTipPre" ErrorMessage="El Porcentaje del Importe debe estar comprendido entre 0,00%  y 15,00%" ForeColor="Red" MaximumValue="15,00" MinimumValue="0,00" Type="Double"></asp:RangeValidator>
                         <asp:TextBox class="txtbox" ID="txtTipPre" runat="server"></asp:TextBox>
-                        <asp:RequiredFieldValidator ID="rqdtxtTipPre" runat="server" ErrorMessage="El porcentaje del importe es obligatorio" ForeColor="Red"></asp:RequiredFieldValidator>
+                        <asp:RequiredFieldValidator ID="rqdtxtTipPre" runat="server" ErrorMessage="El porcentaje del importe es obligatorio" ForeColor="Red" ControlToValidate="txtTipPre"></asp:RequiredFieldValidator>
                     </div>
                 </div>
                 <div class="parte">

@@ -42,6 +42,15 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.Label txtCodPres;
 
         /// <summary>
+        /// Control regtxtCodPre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator regtxtCodPre;
+
+        /// <summary>
         /// Control txtCodPre.
         /// </summary>
         /// <remarks>
@@ -87,6 +96,15 @@ namespace GesPresta
         protected global::System.Web.UI.WebControls.Label txtImpF;
 
         /// <summary>
+        /// Control rngtxtImpPre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rngtxtImpPre;
+
+        /// <summary>
         /// Control txtImpPre.
         /// </summary>
         /// <remarks>
@@ -112,6 +130,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label txtPorImp;
+
+        /// <summary>
+        /// Control rngtxtTipPre.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RangeValidator rngtxtTipPre;
 
         /// <summary>
         /// Control txtTipPre.
