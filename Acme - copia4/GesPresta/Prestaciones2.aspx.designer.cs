@@ -11,7 +11,7 @@ namespace GesPresta
 {
 
 
-    public partial class Prestaciones
+    public partial class Prestaciones2
     {
 
         /// <summary>
@@ -40,6 +40,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Label txtCodPres;
+
+        /// <summary>
+        /// Control btnVerPrestaciones.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnVerPrestaciones;
 
         /// <summary>
         /// Control regtxtCodPre.
@@ -184,6 +193,15 @@ namespace GesPresta
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::GesPresta.prestacionesBuscar prestacionesBuscar1;
+
+        /// <summary>
+        /// Control btnSeleccionar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnSeleccionar;
 
         /// <summary>
         /// Control cmdEnviar.
