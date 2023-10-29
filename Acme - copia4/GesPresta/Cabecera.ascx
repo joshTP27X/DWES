@@ -5,8 +5,8 @@
 
 <div id="contenedor">
     <div id="Enlaces">
-        <asp:LinkButton class="link" ID="LinkButtonInicio" runat="server" PostBackUrl="~/Default.aspx" CausesValidation="False">Inicio</asp:LinkButton>
-        <asp:LinkButton class="link" ID="LinkButtonEmpleados" runat="server" PostBackUrl="~/EmpleadosCalendar.aspx" CausesValidation="False">Empleados</asp:LinkButton>
+        <asp:LinkButton class="link" ID="LinkButtonInicio" runat="server" PostBackUrl="~/MPDefault.aspx" CausesValidation="False">Inicio</asp:LinkButton>
+        <asp:LinkButton class="link" ID="LinkButtonEmpleados" runat="server" PostBackUrl="~/MPEmpleados.aspx" CausesValidation="False">Empleados</asp:LinkButton>
         <asp:LinkButton class="link" ID="LinkButtonPrestaciones" runat="server" PostBackUrl="~/Prestaciones1.aspx" CausesValidation="False">Prestaciones</asp:LinkButton>
     </div>
 
