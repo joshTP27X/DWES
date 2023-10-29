@@ -33,31 +33,13 @@ namespace GesPresta
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control LinkButtonInicio.
+        /// Control Cabecera.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonInicio;
-
-        /// <summary>
-        /// Control LinkButtonEmpleados.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonEmpleados;
-
-        /// <summary>
-        /// Control LinkButtonPrestaciones.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.LinkButton LinkButtonPrestaciones;
+        protected global::GesPresta.Cabecera Cabecera;
 
         /// <summary>
         /// Control ContentPlaceHolder1.

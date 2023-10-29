@@ -1,5 +1,8 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="GesPresta.MasterPage" %>
 
+<%@ Register Src="~/Cabecera.ascx" TagPrefix="uc1" TagName="Cabecera" %>
+
+
 <link type="text/css" rel="stylesheet" href="MasterPage.css" />
 <!DOCTYPE html>
 
@@ -13,23 +16,7 @@
 <body>
     <form id="form1" runat="server">
         <div>
-             <div id="contenedor">
-                <div id="Enlaces">
-                    <asp:LinkButton class="link" ID="LinkButtonInicio" runat="server" PostBackUrl="~/Default.aspx" CausesValidation="False">Inicio</asp:LinkButton>
-                    <asp:LinkButton class="link" ID="LinkButtonEmpleados" runat="server" PostBackUrl="~/EmpleadosCalendar.aspx" CausesValidation="False">Empleados</asp:LinkButton>
-                    <asp:LinkButton class="link" ID="LinkButtonPrestaciones" runat="server" PostBackUrl="~/Prestaciones1.aspx" CausesValidation="False">Prestaciones</asp:LinkButton>
-                </div>
-
-                <div>
-                    <h1>ACME INNOVACION, S. FIG.</h1>
-                </div>
-
-                <div>
-                    <h3>Gestion de Prestaciones Sociales</h3>
-                </div>
-
-                <hr />
-            </div>
+            <uc1:Cabecera runat="server" ID="Cabecera" />
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>
