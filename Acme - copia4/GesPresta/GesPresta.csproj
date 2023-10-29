@@ -79,11 +79,13 @@
     <Content Include="Empleados1.aspx" />
     <Content Include="Empleados.aspx" />
     <Content Include="HojaEstilos.css" />
+    <Content Include="MPDefault.aspx" />
     <Content Include="Prestaciones2.aspx" />
     <Content Include="Prestaciones1.aspx" />
     <Content Include="Prestaciones.aspx" />
     <Content Include="Prestaciones1Respuesta.aspx" />
     <Content Include="prestacionesBuscar.ascx" />
+    <Content Include="MasterPage.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -121,6 +123,20 @@
     </Compile>
     <Compile Include="Empleados.aspx.designer.cs">
       <DependentUpon>Empleados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage.master.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage.master.designer.cs">
+      <DependentUpon>MasterPage.master</DependentUpon>
+    </Compile>
+    <Compile Include="MPDefault.aspx.cs">
+      <DependentUpon>MPDefault.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MPDefault.aspx.designer.cs">
+      <DependentUpon>MPDefault.aspx</DependentUpon>
     </Compile>
     <Compile Include="Prestaciones2.aspx.cs">
       <DependentUpon>Prestaciones2.aspx</DependentUpon>
@@ -160,6 +176,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="MasterPage.master" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
