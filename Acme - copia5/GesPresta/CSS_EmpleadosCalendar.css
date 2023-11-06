@@ -1,0 +1,108 @@
+﻿body{
+    margin-top: 30px;
+}
+#titulo {
+    text-align: center;
+    width: 100%;
+}
+#formulario {
+    width: 100%;
+}
+.parte {
+    width: 100%;
+}
+.letra {
+    width: 20%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.completar {
+    width: 70%;
+    display: inline-block;
+    margin-left: 10px;
+}
+.pe {
+    float: right;
+}
+.textbox {
+    width: 200px;
+    float: left;
+}
+#boton {
+    text-align: center;
+    margin-top: 40px;
+}
+.rbl{
+    margin-left: 20px;
+}
+.dlist{
+    float: left;
+    width: 150px;
+}
+#respuesta{
+    text-align: center;
+    margin-top: 20px;
+}
+.calendarselect{
+    width: 90%;
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+}
+.calendario{
+    width: 45%;
+    display: flex;
+}
+.calendario2 {
+    width: 50%;
+    display: flex;
+}
+.FN1{
+    width: 45%;
+}
+.FN2{
+    width: 45%;
+}
+.FN1-2 {
+    width: 30%;
+}
+.FN2-2 {
+    width: 30%;
+}
+.FN3-2{
+    width: 30%;
+}
+.FN3-1{
+    display: inline-block;
+    margin-top: 10px;
+}
+.fn{
+    display: block;
+    width: 100%;
+}
+.tn{
+    display: block;
+    width: 150px;
+}
+.fn2 {
+    display: block;
+    width: 100%;
+}
+.fn3{
+    width: 40%;
+}
+.tn2 {
+    display: block;
+    width: 150px;
+}
+.tn3{
+    width: 40%;
+}
+#Calendar1{
+    width: 210px;
+    height:190px;
+}
+#cFinEmp {
+    width: 210px;
+    height: 190px;
+}
