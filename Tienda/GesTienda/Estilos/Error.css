@@ -1,0 +1,11 @@
+﻿h1, h3{
+    text-align: center;
+}
+.contenedor{
+    justify-content: center;
+    border: 2px solid;
+    padding: 10px;
+}
+.cont1{
+    margin: 20px;
+}

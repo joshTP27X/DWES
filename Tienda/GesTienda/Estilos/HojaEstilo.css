@@ -71,8 +71,35 @@
 .contenidotitulo {
     font-size: x-large;
     font-weight: bold;
+    width: 1213px;
+    margin-left: 0px;
+    text-align: center;
+}
+
+.contenidotitulo2 {
+    font-size: large;
+    font-weight: bold;
+    width: 1213px;
+    margin-left: 0px;
+    text-align: center;
 }
 
 .verticalMitad {
     vertical-align: middle;
 }
+
+.parteop{
+    display:grid;
+}
+
+.controlesadd{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#contenidoLogin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
