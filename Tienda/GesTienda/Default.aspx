@@ -106,11 +106,13 @@
                                                 </td>
                                             </tr>
                                         </table>
+                   
                                     </td>
                                 </tr>
                             </table>
                         </LayoutTemplate>
                     </asp:Login>
+                    <asp:Label ID="lblMensajes" runat="server" Text=""></asp:Label>
                 </div>
             </div>
             <div id="pie">
