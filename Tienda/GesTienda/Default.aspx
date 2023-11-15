@@ -105,6 +105,11 @@
                                                     <asp:Button ID="LoginButton" runat="server" CommandName="Login" Text="Inicio de sesión" ValidationGroup="Login1" />
                                                 </td>
                                             </tr>
+                                            <tr>
+                                                <td align="center" colspan="2">
+                                                    <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="~/Registrarse.aspx">Registrarse</asp:LinkButton>
+                                                </td>
+                                            </tr>
                                         </table>
                    
                                     </td>
