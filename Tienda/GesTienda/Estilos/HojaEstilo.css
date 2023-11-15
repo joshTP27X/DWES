@@ -92,8 +92,8 @@
     display:grid;
 }
 
-.controlesadd{
-    display: flex;
+.controlesadd {
+    float: right;
     justify-content: space-between;
     align-items: center;
 }
@@ -104,7 +104,6 @@
     text-align: center;
 }
 #contenidoRegistro {
-    display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -112,4 +111,7 @@
 .cont{
     text-align: center;
     margin: 10px;
+}
+.botones{
+    
 }
