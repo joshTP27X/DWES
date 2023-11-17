@@ -10,7 +10,7 @@
     <asp:GridView ID="grdTipos" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" HorizontalAlign="Center" PageSize="5" Width="50%" DataKeyNames="IdTipo">
         <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
         <Columns>
-            <asp:CommandField ShowSelectButton="True" />
+            <asp:CommandField ShowSelectButton="True" ButtonType="Button" />
             <asp:BoundField DataField="IdTipo" HeaderText="IdTipo" ReadOnly="True" SortExpression="IdTipo" />
             <asp:BoundField DataField="DesTip" HeaderText="DesTip" SortExpression="DesTip" />
         </Columns>

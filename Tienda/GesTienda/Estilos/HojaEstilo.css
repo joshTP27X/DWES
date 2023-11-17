@@ -89,7 +89,12 @@
 }
 
 .parteop{
-    display:grid;
+    display:flex;
+    width: 90%;
+}
+
+.seleccionar{
+    width:60%;
 }
 
 .controlesadd {
@@ -109,8 +114,15 @@
     text-align: center;
 }
 .cont{
-    text-align: center;
+    display: flex;
+    
     margin: 10px;
+}
+.p{
+    margin-right: 10px;
+}
+.txt{
+    margin-left:10px;
 }
 .botones{
     

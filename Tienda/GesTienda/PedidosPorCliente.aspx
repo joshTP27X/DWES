@@ -10,7 +10,7 @@
         <asp:GridView ID="grdClientes" runat="server" AllowPaging="True" AutoGenerateColumns="False" CellPadding="4" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1" ForeColor="#333333" GridLines="None" PageSize="5" Width="60%" OnPageIndexChanged="grdClientes_PageIndexChanged" OnSelectedIndexChanged="grdClientes_SelectedIndexChanged">
             <AlternatingRowStyle BackColor="White" ForeColor="#284775" />
             <Columns>
-                <asp:CommandField ShowSelectButton="True" />
+                <asp:CommandField ShowSelectButton="True" ButtonType="Button" />
                 <asp:BoundField DataField="IdCliente" HeaderText="Id Cliente" ReadOnly="True" SortExpression="IdCliente" />
                 <asp:BoundField DataField="NomCli" HeaderText="Nombre" SortExpression="NomCli" />
                 <asp:BoundField DataField="PobCli" HeaderText="Poblacion" SortExpression="PobCli" />
