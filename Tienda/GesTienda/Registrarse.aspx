@@ -68,14 +68,10 @@
                 </div>
                 <h2 style="text-align: center">GesTienda</h2>
                 <h4 style="text-align: center">Registro de Usuario</h4>
-                <div id="contenidoRegistro">
+                <div id="contenidoRegistro" style="margin-left: 38%">
                     <div class="cont">
-                        <div class="p">
-                            <asp:Label ID="lblCorCli" runat="server" Text="Correo Electronico"></asp:Label>
-                        </div>
-                        <div class="txt">
-                            <asp:TextBox ID="txtCorCli" runat="server"></asp:TextBox>
-                        </div>
+                        <asp:Label ID="lblCorCli" runat="server" Text="Correo Electronico"></asp:Label>
+                        <asp:TextBox ID="txtCorCli" runat="server"></asp:TextBox>
                     </div>
                     <div class="cont">
                         <asp:Label ID="lblContraseña1" runat="server" Text="Contraseña"></asp:Label>
