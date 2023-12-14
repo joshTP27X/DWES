@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josaricol\\2repo\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj": {}
+    "C:\\Users\\joseph\\repositorio\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josaricol\\2repo\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj": {
+    "C:\\Users\\joseph\\repositorio\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josaricol\\2repo\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj",
+        "projectUniqueName": "C:\\Users\\joseph\\repositorio\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj",
         "projectName": "MvcAgenda",
-        "projectPath": "C:\\Users\\josaricol\\2repo\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj",
-        "packagesPath": "C:\\Users\\josaricol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josaricol\\2repo\\DWES\\MvcAgenda\\MvcAgenda\\obj\\",
+        "projectPath": "C:\\Users\\joseph\\repositorio\\DWES\\MvcAgenda\\MvcAgenda\\MvcAgenda.csproj",
+        "packagesPath": "C:\\Users\\joseph\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\joseph\\repositorio\\DWES\\MvcAgenda\\MvcAgenda\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\josaricol\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,6 +56,10 @@
               "target": "Package",
               "version": "[6.0.23, )"
             },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[6.0.23, )"
+            },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -86,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }
