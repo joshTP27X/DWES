@@ -1,4 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using MvcSoporte.Data;
 using MvcSoporte.Models;
 using System.Diagnostics;
 
@@ -7,14 +9,27 @@ namespace MvcSoporte.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
+        private readonly MvcSoporteContexto _context;
 
-        public HomeController(ILogger<HomeController> logger)
+        public HomeController(ILogger<HomeController> loggerr, MvcSoporteContexto context)
         {
-            _logger = logger;
+            _logger = loggerr;
+            _context = context;
         }
 
         public IActionResult Index()
         {
+            // Busca el empleado correspondiente al usuario actual. Si existe, activa la
+            // vista (View) y en caso contrario, se redirige para crear el empleado.
+            string? emailUsuario = User.Identity.Name;
+            Empleado? empleado = _context.Empleados.Where(e => e.Email == emailUsuario)
+            .FirstOrDefault();
+            if (User.Identity.IsAuthenticated &&
+            User.IsInRole("Usuario") &&
+            empleado == null)
+            {
+                return RedirectToAction("Create", "MisDatos");
+            }
             return View();
         }
 
