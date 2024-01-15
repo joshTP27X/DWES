@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\joseph\\repositorio\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {}
+    "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {}
   },
   "projects": {
-    "C:\\Users\\joseph\\repositorio\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {
+    "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\joseph\\repositorio\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
+        "projectUniqueName": "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
         "projectName": "MvcSoporte",
-        "projectPath": "C:\\Users\\joseph\\repositorio\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
-        "packagesPath": "C:\\Users\\joseph\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\joseph\\repositorio\\DWES\\MvcSoporte\\MvcSoporte\\obj\\",
+        "projectPath": "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
+        "packagesPath": "C:\\Users\\josaricol\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\joseph\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\josaricol\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -90,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }
