@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +12,7 @@ using MvcSoporte.Models;
 
 namespace MvcSoporte.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class AvisosController : Controller
     {
         private readonly MvcSoporteContexto _context;
@@ -30,9 +33,7 @@ namespace MvcSoporte.Controllers
             {
                 strCadenaBusqueda = busquedaActual;
             }
-
             ViewData["BusquedaActual"] = strCadenaBusqueda;
-
             if (intTipoAveriaId != null)
             {
                 pageNumber = 1;
@@ -42,13 +43,13 @@ namespace MvcSoporte.Controllers
                 intTipoAveriaId = tipoAveriaIdActual;
             }
             ViewData["TipoAveriaIdActual"] = intTipoAveriaId;
-
             // Cargar datos de los avisos
             var avisos = _context.Avisos.AsQueryable();
+            // Para buscar avisos por nombre de empleado en la lista de valores
+
             // Ordenar los avisos de forma descendente por FechaAviso
             avisos = avisos.OrderByDescending(s => s.FechaAviso);
 
-            // Para buscar avisos por nombre de empleado en la lista de valores
             if (!String.IsNullOrEmpty(strCadenaBusqueda))
             {
                 avisos = avisos.Where(s => s.Empleado.Nombre.Contains(strCadenaBusqueda));
@@ -66,15 +67,15 @@ namespace MvcSoporte.Controllers
                 "Descripcion", intTipoAveriaId);
                 avisos = avisos.Where(x => x.TipoAveriaId == intTipoAveriaId);
             }
-
             avisos = avisos.Include(a => a.Empleado)
-                           .Include(a => a.Equipo)
-                           .Include(a => a.TipoAveria);
-
+                            .Include(a => a.Equipo)
+                            .Include(a => a.TipoAveria);
             int pageSize = 3;
-            return View(await PaginatedList<Aviso>.CreateAsync(avisos.AsNoTracking(), pageNumber ?? 1, pageSize));
+            return View(await PaginatedList<Aviso>.CreateAsync(avisos.AsNoTracking(),
+            pageNumber ?? 1, pageSize));
             // return View(await avisos.AsNoTracking().ToListAsync());
-            // var mvcSoporteContexto = _context.Avisos.Include(a => a.Empleado).Include(a => a.Equipo).Include(a => a.TipoAveria);
+
+            // var mvcSoporteContexto = _context.Avisos.Include(a => a.Empleado).Include(a = a.Equipo).Include(a => a.TipoAveria);
             // return View(await mvcSoporteContexto.ToListAsync());
         }
 

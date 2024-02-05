@@ -9,7 +9,7 @@
 <h1>Avisos</h1>
 
 <p>
-    <a asp-action="Create">Nuevo Avisos</a>
+    <a asp-action="Create">Crear Nuevo</a>
 </p>
 
 @* Agregar un cuadro de búsqueda en la vista Index de Avisos *@
@@ -36,6 +36,7 @@
     </div>
 </form>
 
+
 <table class="table">
     <thead>
         <tr>
@@ -53,7 +54,7 @@
             </th>
             @*
             <th>
-            @Html.DisplayNameFor(model => model.Observaciones)
+                @Html.DisplayNameFor(model => model.Observaciones)
             </th>
             *@
             <th>
@@ -98,9 +99,9 @@
                 @Html.DisplayFor(modelItem => item.Equipo.CodigoEquipo)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Id">Delete</a>
+                <a asp-action="Edit" asp-route-id="@item.Id">Editar</a> |
+                <a asp-action="Details" asp-route-id="@item.Id">Detalles</a> |
+                <a asp-action="Delete" asp-route-id="@item.Id">Eliminar</a>
             </td>
         </tr>
 }

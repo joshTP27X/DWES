@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,6 +12,7 @@ using MvcSoporte.Models;
 
 namespace MvcSoporte.Controllers
 {
+    [Authorize(Roles = "Administrador")]
     public class EmpleadosController : Controller
     {
         private readonly MvcSoporteContexto _context;
@@ -25,15 +28,10 @@ namespace MvcSoporte.Controllers
             // Cargar datos de Empleados
             var empleados = from s in _context.Empleados
                             select s;
-
             int pageSize = 3;
             return View(await PaginatedList<Empleado>.CreateAsync(empleados.AsNoTracking(),
             pageNumber ?? 1, pageSize));
             // return View(await _context.Empleados.ToListAsync()) :
-
-            //return _context.Empleados != null ? 
-                          //View(await _context.Empleados.ToListAsync()) :
-                          //Problem("Entity set 'MvcSoporteContexto.Empleados'  is null.");
         }
 
         // GET: Empleados/Details/5

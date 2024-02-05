@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 namespace MvcSoporte.Models
 {
@@ -9,6 +10,5 @@ namespace MvcSoporte.Models
         [Required(ErrorMessage = "La descripción del tipo de avería es un campo requerido.")]
         public string? Descripcion { get; set; }
         public ICollection<Aviso>? Avisos { get; set; }
-
     }
 }

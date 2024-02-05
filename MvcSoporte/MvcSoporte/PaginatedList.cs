@@ -26,7 +26,8 @@ namespace MvcSoporte
                 return (PageIndex < TotalPages);
             }
         }
-        public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> source, int pageIndex, int pageSize)
+        public static async Task<PaginatedList<T>> CreateAsync(IQueryable<T> source,
+        int pageIndex, int pageSize)
         {
             var count = await source.CountAsync();
             var items = await source.Skip((pageIndex - 1) * pageSize)
@@ -34,6 +35,5 @@ namespace MvcSoporte
             .ToListAsync();
             return new PaginatedList<T>(items, count, pageIndex, pageSize);
         }
-
     }
 }

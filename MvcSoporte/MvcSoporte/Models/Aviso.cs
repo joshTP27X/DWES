@@ -1,4 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations;
+using System.Xml.Linq;
 
 namespace MvcSoporte.Models
 {
@@ -25,6 +26,5 @@ namespace MvcSoporte.Models
         public Empleado? Empleado { get; set; }
         public TipoAveria? TipoAveria { get; set; }
         public Equipo? Equipo { get; set; }
-
     }
 }

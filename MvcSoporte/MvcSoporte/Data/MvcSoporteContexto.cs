@@ -5,8 +5,7 @@ namespace MvcSoporte.Data
 {
     public class MvcSoporteContexto : DbContext
     {
-        public MvcSoporteContexto(DbContextOptions<MvcSoporteContexto> options)
-        : base(options)
+        public MvcSoporteContexto(DbContextOptions<MvcSoporteContexto> options): base(options)
         {
         }
         public DbSet<Aviso>? Avisos { get; set; }
