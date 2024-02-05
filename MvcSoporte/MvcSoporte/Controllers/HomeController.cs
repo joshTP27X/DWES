@@ -13,9 +13,15 @@ namespace MvcSoporte.Controllers
         private readonly ILogger<HomeController> _logger;
         private readonly MvcSoporteContexto _context;
 
+<<<<<<< HEAD
         public HomeController(ILogger<HomeController> logger, MvcSoporteContexto context)
         {
             _logger = logger;
+=======
+        public HomeController(ILogger<HomeController> loggerr, MvcSoporteContexto context)
+        {
+            _logger = loggerr;
+>>>>>>> refs/remotes/origin/main
             _context = context;
         }
 
@@ -32,7 +38,10 @@ namespace MvcSoporte.Controllers
             {
                 return RedirectToAction("Create", "MisDatos");
             }
+<<<<<<< HEAD
 
+=======
+>>>>>>> refs/remotes/origin/main
             return View();
         }
         /*[Authorize(Roles = "Usuario")]

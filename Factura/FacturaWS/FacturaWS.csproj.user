@@ -3,7 +3,11 @@
   <PropertyGroup>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
+<<<<<<< HEAD
     <IISExpressSSLPort>44331</IISExpressSSLPort>
+=======
+    <IISExpressSSLPort>44333</IISExpressSSLPort>
+>>>>>>> refs/remotes/origin/main
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
@@ -16,7 +20,11 @@
         <WebProjectProperties>
           <StartPageUrl>
           </StartPageUrl>
+<<<<<<< HEAD
           <StartAction>CurrentPage</StartAction>
+=======
+          <StartAction>NoStartPage</StartAction>
+>>>>>>> refs/remotes/origin/main
           <AspNetDebugging>True</AspNetDebugging>
           <SilverlightDebugging>False</SilverlightDebugging>
           <NativeDebugging>False</NativeDebugging>

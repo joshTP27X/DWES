@@ -15,6 +15,7 @@ namespace MvcSoporte.Controllers
     [Authorize(Roles = "Administrador")]
     public class TipoAveriasController : Controller
     {
+
         private readonly MvcSoporteContexto _context;
 
         public TipoAveriasController(MvcSoporteContexto context)
@@ -23,6 +24,7 @@ namespace MvcSoporte.Controllers
         }
 
         // GET: TipoAverias
+        [Authorize(Roles = "Administrador")]
         public async Task<IActionResult> Index()
         {
               return _context.TipoAverias != null ? 

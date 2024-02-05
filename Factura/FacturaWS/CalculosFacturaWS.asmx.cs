@@ -45,6 +45,10 @@ namespace FacturaWS
             return resultado;
         }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
         [WebMethod]
         public string HelloWorld()
         {

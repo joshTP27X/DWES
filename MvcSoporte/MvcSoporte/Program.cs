@@ -16,6 +16,10 @@ builder.Services.AddDbContext<MvcSoporteContexto>(options =>
 
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
+<<<<<<< HEAD
+=======
+// Deshabilitar confirmación de usuario. Configurar Identity para utilizar roles
+>>>>>>> refs/remotes/origin/main
 builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>();

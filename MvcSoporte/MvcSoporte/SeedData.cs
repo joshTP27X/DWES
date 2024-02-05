@@ -1,5 +1,8 @@
 ﻿using Microsoft.AspNetCore.Identity;
+<<<<<<< HEAD
 using MvcSoporte.Data;
+=======
+>>>>>>> refs/remotes/origin/main
 
 namespace MvcSoporte
 {

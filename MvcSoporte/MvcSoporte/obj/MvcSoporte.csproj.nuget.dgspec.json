@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\josaricol\\2repo\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {}
+    "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {}
   },
   "projects": {
-    "C:\\Users\\josaricol\\2repo\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {
+    "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\josaricol\\2repo\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
+        "projectUniqueName": "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
         "projectName": "MvcSoporte",
-        "projectPath": "C:\\Users\\josaricol\\2repo\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
+        "projectPath": "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\MvcSoporte.csproj",
         "packagesPath": "C:\\Users\\josaricol\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\josaricol\\2repo\\DWES\\MvcSoporte\\MvcSoporte\\obj\\",
+        "outputPath": "C:\\Users\\josaricol\\2repo\\2DWES\\DWES\\MvcSoporte\\MvcSoporte\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\josaricol\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -50,6 +50,13 @@
             },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
+<<<<<<< HEAD
+=======
+              "version": "[6.0.23, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+>>>>>>> refs/remotes/origin/main
               "version": "[6.0.23, )"
             },
             "Microsoft.EntityFrameworkCore.SqlServer": {

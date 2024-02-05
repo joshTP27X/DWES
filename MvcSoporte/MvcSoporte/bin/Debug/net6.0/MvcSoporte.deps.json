@@ -8,7 +8,11 @@
     ".NETCoreApp,Version=v6.0": {
       "MvcSoporte/1.0.0": {
         "dependencies": {
+<<<<<<< HEAD
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.8",
+=======
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "6.0.21",
+>>>>>>> refs/remotes/origin/main
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "6.0.23",
           "Microsoft.AspNetCore.Identity.UI": "6.0.23",
           "Microsoft.EntityFrameworkCore.SqlServer": "6.0.23",

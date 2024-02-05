@@ -3,7 +3,10 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MvcSoporte.Data;
 using MvcSoporte.Models;
+<<<<<<< HEAD
 using System.Data;
+=======
+>>>>>>> refs/remotes/origin/main
 
 namespace MvcSoporte.Controllers
 {
@@ -36,6 +39,10 @@ namespace MvcSoporte.Controllers
             }
             return View(empleado);
         }
+<<<<<<< HEAD
+=======
+        // GET: MisDatos/Edit
+>>>>>>> refs/remotes/origin/main
         public async Task<IActionResult> Edit()
         {
             // Se seleccionan los datos del empleado correspondiente al usuario actual
@@ -49,6 +56,10 @@ namespace MvcSoporte.Controllers
             }
             return View(empleado);
         }
+<<<<<<< HEAD
+=======
+
+>>>>>>> refs/remotes/origin/main
         // POST: MisDatos/Edit
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -79,7 +90,11 @@ namespace MvcSoporte.Controllers
                 }
                 return RedirectToAction("Index", "Home");
             }
+<<<<<<< HEAD
              return View(empleado);
+=======
+            return View(empleado);
+>>>>>>> refs/remotes/origin/main
         }
         private bool EmpleadoExists(int id)
         {
